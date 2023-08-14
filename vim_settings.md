@@ -5,8 +5,7 @@ vim tab键默认设置为8个空格，修改设置为4个空格,并且设置自�
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-
-"set autoindent
+set autoindent
 set smartindent
 
 inoremap ' ''<ESC>i
@@ -14,10 +13,10 @@ inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {<CR>}<ESC>O
-
 ```
 之后保存，会出现readonly文件无法修改错误  
->解决办法如下:
+
+# 解决办法:
 + 在退出时输入如下命令：
 ```shell
 :w !sudo tee %
